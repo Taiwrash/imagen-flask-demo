@@ -3,11 +3,11 @@
 On your Google cloud shell, run the following commands:
 
 ```bash
-git clone https://github.com/Taiwrash/flask-imagen-demo.git
+git clone https://github.com/Taiwrash/imagen-flask-demo.git
 ```
 
 ```bash
-cd flask-imagen-demo
+cd imagen-flask-demo
 ```
 install the requirements
 
