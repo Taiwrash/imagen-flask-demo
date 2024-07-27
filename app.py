@@ -14,7 +14,7 @@ def index():
         prompt = request.form['prompt']
         # Call your backend function to generate the image based on the prompt
         image_path = generate_image(
-            project_id='qwiklabs-gcp-03-554bf2cf3317',
+            project_id='gcp-project-id',
             location='us-east4',
             output_file='static/images/image.jpeg',
             prompt=prompt,
@@ -57,7 +57,7 @@ def api_generate_image():
     
     # Call your backend function to generate the image based on the prompt
     image_path = generate_image(
-                    project_id='qwiklabs-gcp-03-554bf2cf3317',
+                    project_id='gcp-project-id',
                     location='us-east4',
                     output_file='image.jpeg',
                     prompt=prompt
