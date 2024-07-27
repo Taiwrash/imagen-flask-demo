@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Image Generator</h1>
+    </header>
+    <main>
+        <form method="post">
+            <label for="prompt">Enter your prompt:</label>
+            <input type="text" id="prompt" name="prompt" required>
+            <button type="submit">Generate Image</button>
+        </form>
+
+        {% if image_generated %}
+        <div class="generated-image">
+            <h2>Generated Image for: "{{ prompt }}"</h2>
+            <img src="{{ url_for('static', filename='images/image.jpeg') }}" alt="Generated Image">
+        </div>
+        {% endif %}
+    </main>
+</body>
+</html>
